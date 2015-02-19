@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+
+
+html, body {
+    background-color: #1e1b19;
+}
+
+canvas {
+    overflow: hidden;
+}
+
+
+/* animated spiral background with overlay */
+
+.bgspiral {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.canvaswrap {
+	position:relative;
+	width:100%;
+}
+
+.canvaswrap canvas {
+	position:absolute;
+	top:0%;
+	left:0%;
+	z-index:0;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+i.nav_slide_button{
+	margin-top: 2em;
+	text-shadow: 2px -1px 0px #e94400, -2px 1px 0px #0092ff;
+}
+i.nav_slide_button:hover{
+	-webkit-transition: all 0.5s ease-in-out;
+     -khtml-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+	text-shadow: 2px 1px 0px #e94400, -2px -1px 0px #0092ff;
+}
+
+/* end animated spiral with overlay */
+
+/*blur*/
+
+.blurcontainer {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 700;
+	width: 100%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 800%;
+    text-align: center;
+    display: block;
+    opacity: .8;
+}
+
+.blurcontainer .mb, .container .motionblur {
+    opacity: 0.1;
+    line-height: 1em;
+    margin-top: -1em;
+    position: relative;
+    display: block;
+    -webkit-transition: all 0.5s ease-in-out;
+     -khtml-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+
+.m0 {margin-left: 0px; color: #f4f4f4;}
+.m1 {margin-left: -1px; color: #e94400;}
+.m2 {margin-left: -2px; color: #e94400;}
+.m3 {margin-left: -4px; color: #e94400;}
+.m4 {margin-left: -6px; color: #e94400;}
+.m5 {margin-left: -8px; color: #e94400;}
+.m11 {margin-left: -10px; color: #e94400;}
+.m12 {margin-left: -12px; color: #e94400;}
+.m6 {margin-left: 1px; color: #0092ff;}
+.m7 {margin-left: 2px; color: #0092ff;}
+.m8 {margin-left: 4px; color: #0092ff;}
+.m9 {margin-left: 6px; color: #0092ff;}
+.m10 {margin-left: 8px; color: #0092ff;}
+.m13 {margin-left: 10px; color: #0092ff;}
+.m14 {margin-left: 12px; color: #0092ff;}
+
+
+/**** Hover State (makes it go back to normal) ****/
+.blurcontainer:hover .m0 {opacity: .6;}
+.blurcontainer:hover .mb {margin-left: 0px;}
+.blurcontainer:hover .motionblur {text-shadow: #FFF 0px 0px 1px;}
+
+/* end blur */
+
+
+/***** spiral buttons *****/
+
+.spiralbtngroup{
+	margin-bottom: .5em;
+}
+
+.spiralbtngroup div {
+	margin-bottom: 1em;
+}
+
+.spiralbtngroup .glyphicon{
+	margin-right: 10px;
+}
+
+.spiralbtn {
+	border: 3px solid #f4f4f4;
+	box-shadow: 
+    3px 0 0 0px #e94400,
+    -3px 0 0px #0092ff;
+}
+
+.spiralbtn:hover {
+	-webkit-transition: all 0.3s ease-in-out;
+     -khtml-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+	box-shadow: 
+    0 0 0 0px #e94400,
+    0 0 0 0px #0092ff;
+}
+
+.spiralbtnweb:hover {
+	color: #0092ff;
+}
+
+.spiralbtngame:hover {
+	color: #ccc;
+}
+
+.spiralbtnmisc:hover {
+	color: #e94400;
+}
+
+/* end spiral buttons */
+
+
+/* --------------------------
+	featured projects
+----------------------------- */
+
+
+
+/* end featured */
+
+
+/* --------------------------
+	easter eggs
+----------------------------- */
+
+.ishtaregg {
+	position: fixed;
+	padding: 2em;
+	box-sizing: border-box;
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+	top: -81%;
+	left: 10%;
+	background: #eee;
+	color: #666;
+	text-shadow: 1px 1px white;
+	border-radius: .75em;
+	border:1px solid #ddd;
+	box-shadow: 0 0 5000px 5000px rgba(0,0,0,0);
+	opacity: .9;
+	transition: all 3s;
+}
+
+.ishtargrats {
+	box-shadow: 0 0 5000px 5000px rgba(0,0,0,.8);
+	top: 10%;
+}
+
+.man {
+	
+}
